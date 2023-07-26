@@ -6,12 +6,11 @@ import CardRecipe from './components/CardRecipe';
 
 function App() {
 
-  const { data, loading, error } = useFetch()
-  console.log('data', data)
   return (
 
     <>
-      {loading ? <h1>Loading...</h1> : <CardRecipe recipes={data} />}}
+
+      <CardRecipe />
     </>
 
   )
